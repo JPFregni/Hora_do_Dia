@@ -7,7 +7,7 @@ function carregar(){
     let diaSem = data.getDay()
     let minutos = data.getMinutes()
 
-    msg.innerHTML = `Agora são ${hora}:${minutos.padStart(2, '0')}`
+    msg.innerHTML = `Agora são ${hora}:${String(minutos).padStart(2, '0')}`
 
     if(hora >=5 && hora < 12) {
         msg.innerHTML += `, tenha um bom dia!`
